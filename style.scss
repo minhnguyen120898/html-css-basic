@@ -1,11 +1,16 @@
 * {
     box-sizing: border-box;
 }
+
 html,body{
     margin: 0;
     height: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Open Sans",Arial,sans-serif;
     overflow-x: hidden;
 }
+
 @media screen and (max-width:576px){
     .language {
         display: none;
@@ -140,6 +145,16 @@ html,body{
         line-height: 26px;
         font-size: 27px;
     }
+    .title__component{
+        display: none;
+    }
+    .title{
+        justify-content: space-between;
+    }
+    .title__componentt{
+        width: 25% !important;
+    }
+
 }
 @media screen and (max-width: 499px){
     #section3 h3 {
@@ -195,7 +210,63 @@ a{
 .pt-3 {
     padding-top: 50px;
 }
-#header{
+// carousel css
+.wrap-outer {
+    overflow: hidden;
+    width: 100%;
+}
+.owl-wrap {
+    position: relative;
+    left: 0;
+    width: 1480px; 
+    animation: my 30s infinite;
+}
+.owl-item{
+    width: 185px;
+    float: left;
+}
+.staff-item p{
+    text-align: center !important;
+}
+.image-wrapper 
+{
+    text-align: center;
+}
+
+@keyframes my {
+    0% {
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    30% {
+        left: -185px;      
+    }
+    40% {
+        left: -370px;       
+    }
+    50% {
+        left: -555px;    
+    }
+    60% {
+        left: -740px;
+    }
+    70% {
+        left: -925px;      
+    }
+    80% {
+        left: -1110px;       
+    }
+    90%{
+        left: -1295px;
+    }
+    100% {
+        left: 0;  
+    }
+}
+// end carousel css
+header {
     position: fixed;
     top:0;
     left:0;
@@ -207,81 +278,109 @@ a{
     .title{
         display: flex;
         flex-wrap: wrap;
-        margin: 0 10%; 
-        justify-content: space-between;
-    }
-    .logo{
-        margin: 10px 0;       
-        align-self: center;
-        img{
-            max-width: 80%;
-            height: auto;
-            margin: auto;
-        }
-    }
-    .language{              
-        align-self: center;
-        margin-right: 30px;
-        // select{
-        //     background-color: transparent;
-        //     color:black;
-        //     padding: 5px;
-        // }
-        > ul {     
-            display: inline;
-            position: relative;
-            padding-inline-start: 0;   
-            margin-block-start: 0;
-            margin-block-end: 0;
-        }
-        ul li {
-            display: inline-block;
-            border: 1px solid white;  
-            width: 109px;     
-            padding: 5px 0 5px 10px;      
-        }
-        
-        ul li ul {
-           display: none;
-           top: 23px;
-           left: 0;
-           border-top: 1px solid rgba(17, 17, 17, 0.8);        
-           position: absolute;
-        } 
-        ul ul li {
-            background-color: white;
-        }
-        ul ul li:hover {
-            background-color: transparent;
-        }
-          
-        ul:hover li ul{
-           display: block;         
-           a {
-               color: black;
-           }
-       }
-        ul:hover > li{
-           background-color: white;
-           a {
-                color: black;
+        margin: 0 5%; 
+        &__logo{
+            margin: 10px 0;       
+            align-self: center;
+            width: 50%;          
+            img{
+                max-width: 80%;
+                height: auto;
+                margin: auto;
             }
-       }
+            &__custom-logo{
+                max-height: 33px;
+                width: auto;
+            }
+        }       
+        &__component{
+            width: 30%;
+            align-self: center;
+            padding-left: 20px;
+            &__nav{
+                display: flex;
+                text-decoration: none;
+                padding-block-start: 0;
+                text-align: center;
+                li {
+                    padding: 5px 20px;
+                }
+                a {
+                    color:#fff;
+                    font-weight: 700;
+                    font-size: 14px;
+                }
+            }
+        }
+        &__componentt{
+            width: 20%;
+            align-self: center;
+            &__menu{
+                float: right;
+                color: white;
+                font-size: x-large;
+            }
+            &__menu:hover .tooltiptext{
+                display: block;
+            }
+            &__language{
+                float: left;
+                margin: 3px auto 0;
+                // select{
+                //     background-color: transparent;
+                //     color:black;
+                //     padding: 5px;
+                // }
+                > ul {     
+                    display: block;
+                    position: relative;
+                    padding-inline-start: 0;   
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                }
+                ul li {
+                    margin: auto;
+                    display: inline-block;
+                    border: 1px solid white;  
+                    width: 109px;     
+                    padding: 3px 10px;      
+                }
+                
+                ul li ul {
+                   display: none;
+                   top: 23px;
+                   left: 0;
+                   border-top: 1px solid rgba(17, 17, 17, 0.8);        
+                   position: absolute;
+                } 
+                ul ul li {
+                    background-color: white;
+                }
+                ul ul li:hover {
+                    background-color: transparent;
+                }
+                  
+                ul:hover li ul{
+                   display: block;         
+                   a {
+                       color: black;
+                   }
+               }
+                ul:hover > li{
+                   background-color: white;
+                   a {
+                        color: black;
+                    }
+               }
+            }
+        }
     }
-    
-    .menu{
-        position: absolute;
-        color: white;
-        top: 20px;
-        right: 40px;
-        font-size: x-large;
-    }
+
     .tooltiptext{
         display: none;
         position: absolute;
-        top: 105%;
-        left: 50%;
-        margin-left: -50px;
+        top: 50px;
+        right: 0;
         background-color: white;
         color: black;
         font-size: 16px;
@@ -291,9 +390,7 @@ a{
         padding: 5px 0;
         width: 100px;
     }
-    .menu:hover .tooltiptext{
-        display: block;
-    }
+    
 }
 
 #section1 {
@@ -306,28 +403,29 @@ a{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: linear-gradient(115deg,rgba(240, 248, 255, 0.1),rgba(30, 31, 38, 0.7)),url(./assets/christina-wocintechchat-com-ESClFkgWwH8-unsplash.jpg);
+    background-image:url(https://sun-asterisk.vn/wp-content/uploads/2019/03/sun-banner.jpg);
     background-attachment: fixed;
     will-change: transform;
     z-index: -1;
-    .title h2{
+    .title {
+        h2{
         color: white;
         margin: 20px 10%;
         text-shadow: 0px -1px black, 1px 0px black, 0px 1px black, -1px 0px black; 
+        }
+        p:first-child{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        p {
+            line-height: 27px;
+            font-size: 18px;
+            color: white;
+            width: 70%;
+            margin: 0 auto;
+        }
     }
-    p:first-child {
-        font-size: 1.75em;
-        color: white;
-        font-weight: 500;
-        margin: 0 10%;
-    }
-    p:last-child {
-        font-size: 20px;
-        color: white;
-        line-height: 30px;
-        margin: 30px 20% 0px;
-        font-weight: 400;
-    }  
+    
 }
 #section2{
     max-width: 100%;   
@@ -338,7 +436,7 @@ a{
     color: white;
     .bg-2 {
         height: 700px;
-        background-image: linear-gradient(115deg,rgba(240, 248, 255, 0.1),rgba(30, 31, 38, 0.7)),url(./assets/remy_loz-3vVzdb8KKIw-unsplash.jpg);
+        background-image:url(https://sun-asterisk.vn/wp-content/uploads/2019/03/sun-vision.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -380,13 +478,14 @@ a{
         margin-bottom: 10px;
     }
     p {
-        font-size: 16px;
+        font-size: 14px;
         text-align: justify;
         line-height: 24px;
         margin: 0 auto 20px 0;
     }
     h6 {
         font-size: 20px;
+        margin-block-end: 20px;
         .fab,.fas {
             font-size: x-large;
         }       
@@ -431,24 +530,22 @@ a{
     }
 }
 #section5 {
-    background: url(./assets/josh-rose-trYl7JYATH0-unsplash.jpg) center center;
+    background: url(https://sun-asterisk.vn/wp-content/themes/framgia-vn/css/images/bg/bg_business-report.png) center center;
     background-size: cover;
     text-align: center;
-    opacity: 0.9;
-    padding-top: 30px;
+    padding-top: 100px;
+    padding-bottom: 90px;
     color: #fff;
-    font-family: monospace;
-    padding-bottom: 60px;
     margin-bottom: 30px;
     .lead {
         font-size: xx-large;
         margin-top: 50px;
     }
     .item {
-        font-size: x-large;
-        font-weight: bold;
         p {
-            font-size: 40px;
+            font-size: 60px;
+            line-height: 1;
+            font-weight: 300;
             margin: 20px 0 10px;
         }
         
@@ -497,29 +594,9 @@ a{
     }
     button:hover{
         text-shadow: 0 2px 2px rgba(2, 188, 245, 0.6);
-    }
-    .wrap {
-        display: grid;
-        grid-row-gap: 20px;
-        grid-template-columns: auto auto auto;
-        background-color: white;
-        justify-content: space-around;
-        padding: 10px;
-    }
-    .staff-item{
-        font-size: 20px;
-        text-align: center;
-        padding: 0 10px;
-    }
-    .img {
-        width: 100%;
-    }
+    }   
     img{
         border-radius: 50%;
-    }
-    p{
-        padding: 0 20px;
-        margin-bottom: 5px;
     }
 }
 #section7{
@@ -527,7 +604,7 @@ a{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: linear-gradient(115deg,rgba(240, 248, 255, 0.1),rgba(30, 31, 38, 0.7)),url(./assets/christina-wocintechchat-com-ESClFkgWwH8-unsplash.jpg);
+    background-image: linear-gradient(115deg,rgba(240, 248, 255, 0.1),rgba(30, 31, 38, 0.7)),url(https://sun-asterisk.vn/wp-content/uploads/2019/03/sun-banner.jpg);
     background-attachment: fixed;
     will-change: transform;
     color:white;
@@ -536,6 +613,12 @@ a{
     .content {
         align-self: center;
         width: 100%;
+        &__title {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 51px;
+            text-shadow: 0px 4px 3px rgba(3, 16, 26, 0.8);
+        }
     }
     h3 {
         font-size: 1.35em;
@@ -544,18 +627,28 @@ a{
         width: 200px;
         display: inline-block;
     }
-    .title {
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 51px;
-        text-shadow: 0px 4px 3px rgba(3, 16, 26, 0.8);
-    }
-    img{
-        width: 100%;
-        height: auto;
-        vertical-align: middle;
+    
+    .carousel {       
+        &__wrap-outer {
+            overflow: hidden;
+            width: 100%;
+            &__wrap-items {
+                position: relative;
+                width: 2960px;
+                margin: 0;
+                left: 0;
+                animation: 20s slider infinite;
+            }
+        }
     }
     .item-news {
+        float: left;
+        width: 320px;
+        height: 500px;
+        margin-right: 50px;
+        background-color: #fff;
+        box-shadow: 0px 2px 2px rgba(246, 246, 247, 0.8);
+        color: black;
         h3 {
             padding: 0px;
             width: 100%;
@@ -563,20 +656,54 @@ a{
                 color:black;
             }
         }
-        width: 30%;
-        background-color: #fff;
-        box-shadow: 0px 2px 2px rgba(246, 246, 247, 0.8);
-        color: black;
         p{
            font-family: monospace;
            padding: 5px;
            font-weight: bold;
            line-height: 25px; 
         }
-        .date{
+        &__date{
             opacity: 0.6;
         }
+    }    
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+        20%{
+            left: 0;
+        }
+        30% {
+            left: -320px;      
+        }
+        40% {
+            left: -690px;       
+        }
+        50% {
+            left: -1060px;    
+        }
+        60% {
+            left: -1430px;
+        }
+        70% {
+            left: -1800px;      
+        }
+        80% {
+            left: -2170px;       
+        }
+        90%{
+            left: -2540px;
+        }
+        100% {
+            left: 0;  
+        }
     }
+    img{
+        width: 100%;
+        height: auto;      
+        vertical-align: middle;
+    }
+    
 }
 #section8{
     text-align: center;
@@ -600,20 +727,25 @@ a{
         border: none;
     }
 }
-#footer {
+footer {
     background-color: rgba(5, 2, 29, 0.8);   
     color: white;
     a{
         color: orange;
     }
+    li{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
     .opac {
        opacity: 0.1;
     }
     .border_a {
-        width: 22px;
+        width: 25px;
+        font-weight: 700;
         text-align: center;
         display: inline-block;
-        border: 1px solid rgba(17, 17, 17, 0.8);
+        border: 2px solid rgba(255, 251, 251, 0.8);
         border-radius: 50%;
     }
 }

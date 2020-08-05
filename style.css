@@ -6,6 +6,9 @@
 html, body {
   margin: 0;
   height: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Open Sans",Arial,sans-serif;
   overflow-x: hidden;
 }
 
@@ -149,6 +152,17 @@ html, body {
     line-height: 26px;
     font-size: 27px;
   }
+  .title__component {
+    display: none;
+  }
+  .title {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .title__componentt {
+    width: 25% !important;
+  }
 }
 
 @media screen and (max-width: 499px) {
@@ -217,7 +231,99 @@ a {
   padding-top: 50px;
 }
 
-#header {
+.wrap-outer {
+  overflow: hidden;
+  width: 100%;
+}
+
+.owl-wrap {
+  position: relative;
+  left: 0;
+  width: 1480px;
+  -webkit-animation: my 30s infinite;
+          animation: my 30s infinite;
+}
+
+.owl-item {
+  width: 185px;
+  float: left;
+}
+
+.staff-item p {
+  text-align: center !important;
+}
+
+.image-wrapper {
+  text-align: center;
+}
+
+@-webkit-keyframes my {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  30% {
+    left: -185px;
+  }
+  40% {
+    left: -370px;
+  }
+  50% {
+    left: -555px;
+  }
+  60% {
+    left: -740px;
+  }
+  70% {
+    left: -925px;
+  }
+  80% {
+    left: -1110px;
+  }
+  90% {
+    left: -1295px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes my {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  30% {
+    left: -185px;
+  }
+  40% {
+    left: -370px;
+  }
+  50% {
+    left: -555px;
+  }
+  60% {
+    left: -740px;
+  }
+  70% {
+    left: -925px;
+  }
+  80% {
+    left: -1110px;
+  }
+  90% {
+    left: -1295px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+header {
   position: fixed;
   top: 0;
   left: 0;
@@ -229,40 +335,86 @@ a {
   z-index: 9;
 }
 
-#header .title {
+header .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 10%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin: 0 5%;
 }
 
-#header .logo {
+header .title__logo {
   margin: 10px 0;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  width: 50%;
 }
 
-#header .logo img {
+header .title__logo img {
   max-width: 80%;
   height: auto;
   margin: auto;
 }
 
-#header .language {
+header .title__logo__custom-logo {
+  max-height: 33px;
+  width: auto;
+}
+
+header .title__component {
+  width: 30%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-right: 30px;
+  padding-left: 20px;
 }
 
-#header .language > ul {
-  display: inline;
+header .title__component__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -webkit-padding-before: 0;
+          padding-block-start: 0;
+  text-align: center;
+}
+
+header .title__component__nav li {
+  padding: 5px 20px;
+}
+
+header .title__component__nav a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+header .title__componentt {
+  width: 20%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header .title__componentt__menu {
+  float: right;
+  color: white;
+  font-size: x-large;
+}
+
+header .title__componentt__menu:hover .tooltiptext {
+  display: block;
+}
+
+header .title__componentt__language {
+  float: left;
+  margin: 3px auto 0;
+}
+
+header .title__componentt__language > ul {
+  display: block;
   position: relative;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
@@ -272,14 +424,15 @@ a {
           margin-block-end: 0;
 }
 
-#header .language ul li {
+header .title__componentt__language ul li {
+  margin: auto;
   display: inline-block;
   border: 1px solid white;
   width: 109px;
-  padding: 5px 0 5px 10px;
+  padding: 3px 10px;
 }
 
-#header .language ul li ul {
+header .title__componentt__language ul li ul {
   display: none;
   top: 23px;
   left: 0;
@@ -287,44 +440,35 @@ a {
   position: absolute;
 }
 
-#header .language ul ul li {
+header .title__componentt__language ul ul li {
   background-color: white;
 }
 
-#header .language ul ul li:hover {
+header .title__componentt__language ul ul li:hover {
   background-color: transparent;
 }
 
-#header .language ul:hover li ul {
+header .title__componentt__language ul:hover li ul {
   display: block;
 }
 
-#header .language ul:hover li ul a {
+header .title__componentt__language ul:hover li ul a {
   color: black;
 }
 
-#header .language ul:hover > li {
+header .title__componentt__language ul:hover > li {
   background-color: white;
 }
 
-#header .language ul:hover > li a {
+header .title__componentt__language ul:hover > li a {
   color: black;
 }
 
-#header .menu {
-  position: absolute;
-  color: white;
-  top: 20px;
-  right: 40px;
-  font-size: x-large;
-}
-
-#header .tooltiptext {
+header .tooltiptext {
   display: none;
   position: absolute;
-  top: 105%;
-  left: 50%;
-  margin-left: -50px;
+  top: 50px;
+  right: 0;
   background-color: white;
   color: black;
   font-size: 16px;
@@ -333,10 +477,6 @@ a {
   text-align: center;
   padding: 5px 0;
   width: 100px;
-}
-
-#header .menu:hover .tooltiptext {
-  display: block;
 }
 
 #section1 {
@@ -350,7 +490,7 @@ a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(115deg, rgba(240, 248, 255, 0.1), rgba(30, 31, 38, 0.7)), url(./assets/christina-wocintechchat-com-ESClFkgWwH8-unsplash.jpg);
+  background-image: url(https://sun-asterisk.vn/wp-content/uploads/2019/03/sun-banner.jpg);
   background-attachment: fixed;
   will-change: transform;
   z-index: -1;
@@ -362,19 +502,17 @@ a {
   text-shadow: 0px -1px black, 1px 0px black, 0px 1px black, -1px 0px black;
 }
 
-#section1 p:first-child {
-  font-size: 1.75em;
-  color: white;
+#section1 .title p:first-child {
+  font-size: 20px;
   font-weight: 500;
-  margin: 0 10%;
 }
 
-#section1 p:last-child {
-  font-size: 20px;
+#section1 .title p {
+  line-height: 27px;
+  font-size: 18px;
   color: white;
-  line-height: 30px;
-  margin: 30px 20% 0px;
-  font-weight: 400;
+  width: 70%;
+  margin: 0 auto;
 }
 
 #section2 {
@@ -388,7 +526,7 @@ a {
 
 #section2 .bg-2 {
   height: 700px;
-  background-image: linear-gradient(115deg, rgba(240, 248, 255, 0.1), rgba(30, 31, 38, 0.7)), url(./assets/remy_loz-3vVzdb8KKIw-unsplash.jpg);
+  background-image: url(https://sun-asterisk.vn/wp-content/uploads/2019/03/sun-vision.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -435,7 +573,7 @@ a {
 }
 
 #section3 p {
-  font-size: 16px;
+  font-size: 14px;
   text-align: justify;
   line-height: 24px;
   margin: 0 auto 20px 0;
@@ -443,6 +581,8 @@ a {
 
 #section3 h6 {
   font-size: 20px;
+  -webkit-margin-after: 20px;
+          margin-block-end: 20px;
 }
 
 #section3 h6 .fab, #section3 h6 .fas {
@@ -495,14 +635,12 @@ a {
 }
 
 #section5 {
-  background: url(./assets/josh-rose-trYl7JYATH0-unsplash.jpg) center center;
+  background: url(https://sun-asterisk.vn/wp-content/themes/framgia-vn/css/images/bg/bg_business-report.png) center center;
   background-size: cover;
   text-align: center;
-  opacity: 0.9;
-  padding-top: 30px;
+  padding-top: 100px;
+  padding-bottom: 90px;
   color: #fff;
-  font-family: monospace;
-  padding-bottom: 60px;
   margin-bottom: 30px;
 }
 
@@ -511,13 +649,10 @@ a {
   margin-top: 50px;
 }
 
-#section5 .item {
-  font-size: x-large;
-  font-weight: bold;
-}
-
 #section5 .item p {
-  font-size: 40px;
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 300;
   margin: 20px 0 10px;
 }
 
@@ -572,35 +707,8 @@ a {
   text-shadow: 0 2px 2px rgba(2, 188, 245, 0.6);
 }
 
-#section6 .wrap {
-  display: -ms-grid;
-  display: grid;
-  grid-row-gap: 20px;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
-  background-color: white;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 10px;
-}
-
-#section6 .staff-item {
-  font-size: 20px;
-  text-align: center;
-  padding: 0 10px;
-}
-
-#section6 .img {
-  width: 100%;
-}
-
 #section6 img {
   border-radius: 50%;
-}
-
-#section6 p {
-  padding: 0 20px;
-  margin-bottom: 5px;
 }
 
 #section7 {
@@ -608,7 +716,7 @@ a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(115deg, rgba(240, 248, 255, 0.1), rgba(30, 31, 38, 0.7)), url(./assets/christina-wocintechchat-com-ESClFkgWwH8-unsplash.jpg);
+  background-image: linear-gradient(115deg, rgba(240, 248, 255, 0.1), rgba(30, 31, 38, 0.7)), url(https://sun-asterisk.vn/wp-content/uploads/2019/03/sun-banner.jpg);
   background-attachment: fixed;
   will-change: transform;
   color: white;
@@ -623,6 +731,13 @@ a {
   width: 100%;
 }
 
+#section7 .content__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 51px;
+  text-shadow: 0px 4px 3px rgba(3, 16, 26, 0.8);
+}
+
 #section7 h3 {
   font-size: 1.35em;
   border: 2px solid white;
@@ -631,21 +746,25 @@ a {
   display: inline-block;
 }
 
-#section7 .title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 51px;
-  text-shadow: 0px 4px 3px rgba(3, 16, 26, 0.8);
+#section7 .carousel__wrap-outer {
+  overflow: hidden;
+  width: 100%;
 }
 
-#section7 img {
-  width: 100%;
-  height: auto;
-  vertical-align: middle;
+#section7 .carousel__wrap-outer__wrap-items {
+  position: relative;
+  width: 2960px;
+  margin: 0;
+  left: 0;
+  -webkit-animation: 20s slider infinite;
+          animation: 20s slider infinite;
 }
 
 #section7 .item-news {
-  width: 30%;
+  float: left;
+  width: 320px;
+  height: 500px;
+  margin-right: 50px;
   background-color: #fff;
   -webkit-box-shadow: 0px 2px 2px rgba(246, 246, 247, 0.8);
           box-shadow: 0px 2px 2px rgba(246, 246, 247, 0.8);
@@ -668,8 +787,80 @@ a {
   line-height: 25px;
 }
 
-#section7 .item-news .date {
+#section7 .item-news__date {
   opacity: 0.6;
+}
+
+@-webkit-keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  30% {
+    left: -320px;
+  }
+  40% {
+    left: -690px;
+  }
+  50% {
+    left: -1060px;
+  }
+  60% {
+    left: -1430px;
+  }
+  70% {
+    left: -1800px;
+  }
+  80% {
+    left: -2170px;
+  }
+  90% {
+    left: -2540px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  30% {
+    left: -320px;
+  }
+  40% {
+    left: -690px;
+  }
+  50% {
+    left: -1060px;
+  }
+  60% {
+    left: -1430px;
+  }
+  70% {
+    left: -1800px;
+  }
+  80% {
+    left: -2170px;
+  }
+  90% {
+    left: -2540px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+#section7 img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 
 #section8 {
@@ -697,24 +888,30 @@ a {
   border: none;
 }
 
-#footer {
+footer {
   background-color: rgba(5, 2, 29, 0.8);
   color: white;
 }
 
-#footer a {
+footer a {
   color: orange;
 }
 
-#footer .opac {
+footer li {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+footer .opac {
   opacity: 0.1;
 }
 
-#footer .border_a {
-  width: 22px;
+footer .border_a {
+  width: 25px;
+  font-weight: 700;
   text-align: center;
   display: inline-block;
-  border: 1px solid rgba(17, 17, 17, 0.8);
+  border: 2px solid rgba(255, 251, 251, 0.8);
   border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,50 +6,57 @@
     <title>Assignment1</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="header">
+    <header>
         <div class="title">
-            <div class="logo">
+            <div class="title__logo">
                 <a href="#">
-                    <img src="https://sun-asterisk.vn/wp-content/uploads/2019/03/Sun-Logotype-RGB-01.png" alt="Sun*Logo">
+                    <img src="https://sun-asterisk.vn/wp-content/uploads/2019/03/Sun-Logotype-RGB-01.png" class="title__logo__custom-logo" alt="Sun*Logo">
                 </a>
             </div>
-            <div class="language">
-                <ul>
-                    <li>
-                        <a href="#" class="text-white">English</a>
-                        <ul>
-                            <li><a href="#">Vietnamese</a></li>
-                            <li><a href="#">Japan</a></li>
-                        </ul>
-                    </li>
+            <div class="title__component">
+                <ul class="title__component__nav">
+                    <li><a href="#">CƠ HỘI NGHỀ NGHIỆP</a></li>
+                    <li><a href="#">CONTACT US</a></li>
                 </ul>
-                <!-- <select name="language" id="">
-                    <option value="vi">Tiếng Việt</option>
-                    <option value="en">English</option>
-                </select> -->
-            </div>         
+            </div>    
+            <div class="title__componentt">
+                <div class="title__componentt__language">
+                    <ul>
+                        <li>
+                            <a href="#" class="text-white">English</a>
+                            <ul>
+                                <li><a href="#">Vietnamese</a></li>
+                                <li><a href="#">Japan</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>     
+                <div class="title__componentt__menu">
+                    <i class="fas fa-bars"></i>
+                    <span class="tooltiptext">Chưa có gì hết <i class="fas fa-smile-wink"></i></span>
+                </div>
+            </div>
         </div>
-        <div class="menu">
-            <i class="fas fa-bars"></i>
-            <span class="tooltiptext">Chưa có gì hết <i class="fas fa-smile-wink"></i></span>
-        </div>
-    </div>
-    <div id="section1">
+        
+    </header>
+    <section id="section1">
         <div class="title">
             <p>Hello, world.</p>
             <h2>JOIN US & MAKE AWESOME THINGS THAT MATTER</h2>
-            <p>Hãy tưởng tượng ra một thế giới nơi tất cả mọi người đều được tự do tạo ra những giá trị tuyệt vời, có sức mạnh thay đổi cuộc sống. Chúng tôi theo đuổi đam mê của chính mình, cùng nhìn về tương lai. Không chỉ tồn tại, chúng tôi sống để thực hiện hóa những ước mơ.
+            <p>Hãy tưởng tượng ra một thế giới nơi tất cả mọi người đều được tự do tạo ra những giá trị tuyệt vời, có sức mạnh thay đổi cuộc sống. Chúng tôi theo đuổi đam mê của chính mình, cùng nhìn về tương lai.<br>
+                Không chỉ tồn tại, chúng tôi sống để thực hiện hóa những ước mơ. <br>
                 Tại Sun*, tất cả các thành viên luôn nỗ lực đem đến lựa chọn tốt hơn cho mọi người. Đứng ở điểm giao thoa giữa công nghệ, kinh doanh và giáo dục, chúng tôi sẽ mang lại sự thay đổi tích cực
                 cho toàn xã hội. <br><br>
                 <i>We are obsessed with making awesome things with awesome people</i>.
                 <br>
-                Sun* Inc. CEO – Taihei Kobayashi
+                <Strong>Sun* Inc. CEO – Taihei Kobayashi</Strong>
             </p>            
         </div>
-    </div>
-    <div id="section2">     
+    </section>
+    <section id="section2">     
         <div class="bg-2">
             <div class="wrap-content">
                 <div class="content">
@@ -62,8 +69,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div id="section3">
+    </section>
+    <section id="section3">
         <div class="container">
             <div class="row">
                 <p class="title mt-5">THẾ MẠNH CỦA CHÚNG TÔI</p>
@@ -146,50 +153,130 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div id="section4">
+    </section>
+    <section id="section4">
         <div class="container mt-5">
             <div class="title">
                 <p>KHÁCH HÀNG TIÊU BIỂU</p>
             </div>
-            <div class="row mt-3">
-                <div class="item">
-                    <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_eventregist.png" alt="">                    
+            <div class="wrap-outer">
+                <div style="width: 3515px; height: 162px;"  class="owl-wrap">
+                    <div class="owl-item">
+                        <div class="item">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_eventregist.png" alt="">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_eole.png" alt="">                   
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="item">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_datakit.png" alt="">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_adways.png" alt="">                   
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="item">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_yahoo_insyoku.png" alt="">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_verbe.png" alt="">
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="item">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_yahoo_insyoku.png" alt="">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_verbe.png" alt="">
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="item">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_temona.png" alt="">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_sunloft.png" alt="">
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="item">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_datakit.png" alt="">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_adways.png" alt="">                   
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="item">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_yahoo_insyoku.png" alt="">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_verbe.png" alt="">
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="item">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_temona.png" alt="">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_sunloft.png" alt="">
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="item">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_datakit.png" alt="">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_adways.png" alt="">                   
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="item">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_greenromp.png" alt="">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_zdc.png" alt="">
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="item">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_uzabase.png" alt="">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_tsumiki.png" alt="">
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="item">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_eventregist.png" alt="">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_eole.png" alt="">                   
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="item">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_greenromp.png" alt="">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_zdc.png" alt="">
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="item">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_uzabase.png" alt="">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_tsumiki.png" alt="">
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="item">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_eventregist.png" alt="">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_eole.png" alt="">                   
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="item">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_greenromp.png" alt="">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_zdc.png" alt="">
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="item">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_uzabase.png" alt="">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_tsumiki.png" alt="">
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="item">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_temona.png" alt="">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_sunloft.png" alt="">
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="item">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_temona.png" alt="">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_sunloft.png" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="item">
-                    <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_eole.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_datakit.png" alt="">                   
-                </div>
-                <div class="item">
-                    <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_adways.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_greenromp.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_zdc.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_yahoo_insyoku.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_verbe.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_uzabase.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_tsumiki.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_temona.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="https://sun-asterisk.vn/wp-content/uploads/2016/07/logo_top_sunloft.png" alt="">
-                </div>
-            </div>           
+            </div>        
             <div class="pagination mt-3">
                 <a href="#"></a>
                 <a href="#" class="active"></a>
@@ -198,9 +285,9 @@
                 <a href="#"></a>
             </div>
         </div>
-    </div>
-    <div id="section5">
-        <div class="container mt-5">
+    </section>
+    <section id="section5">
+        <div class="container">
             <div class="row">
                 <div class="item">
                     <i class="fas fa-globe-europe lead"></i>
@@ -229,8 +316,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div id="section6">
+    </section>
+    <section id="section6">
         <div class="container">
             <div class="row">
                 <p class="title mt-5">GIÁ TRỊ CỐT LÕI</p>
@@ -267,103 +354,286 @@
                     <button class="btn">CƠ HỘI NGHỀ NGHIỆP</button>
                 </div>
                 <div class="col2">
-                    <div class="wrap">
-                        <div class="staff-item">
-                            <div class="img">
-                                <img src="https://sun-asterisk.vn/wp-content/uploads/2018/11/16.TranDucPhong.jpg" alt="">
-                            </div>
-                            <div class="info">
-                                <p>Name</p>
-                                <p>Position</p>
+                    <div class="owl-carousel owl-team">
+                        <div class="wrap-outer">
+                            <div class="owl-wrap">
+                                <div class="owl-item">
+                                    <div class="single-item">
+                                        <div class="staff-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://sun-asterisk.vn/wp-content/uploads/2018/11/1.NguyenThanhTungD.jpg" alt="" />
+                                            </div>
+                                            <p class="name">Nguyễn Thanh Tùng D</p>
+                                            <p class="position">Strategy Operation Manager</p>
+                                        </div>
+                                        <div class="staff-item">
+                                                <div class="image-wrapper">
+                                                    <img src="https://sun-asterisk.vn/wp-content/uploads/2018/11/2.BuiXuanTrung.png" alt="" />
+                                                </div>
+                                                <p class="name">Bùi Xuân Trung</p>
+                                                <p class="position">Strategy Operation Manager</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="single-item">
+                                        <div class="staff-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://sun-asterisk.vn/wp-content/uploads/2018/11/3.TranThiTinh.png" alt="" />
+                                            </div>
+                                            <p class="name">Trần Thị Tình</p>
+                                            <p class="position">BrSE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="single-item">
+                                        <div class="staff-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://sun-asterisk.vn/wp-content/uploads/2018/11/5.NgoDuySon.jpg" alt="" />
+                                            </div>
+                                            <p class="name">Ngô Duy Sơn</p>
+                                            <p class="position">BrSE</p>
+                                        </div>
+                                        <div class="staff-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://sun-asterisk.vn/wp-content/uploads/2018/11/6.VuTrungKien.jpg" alt="" />
+                                            </div>
+                                            <p class="name">Vũ Trung Kiên</p>
+                                            <p class="position">Section Manager</p>
+                                        </div>
+                                        <div class="staff-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://sun-asterisk.vn/wp-content/uploads/2018/11/8.NguyenThiThanhLy.jpg" alt="" />
+                                            </div>
+                                            <p class="name">Nguyễn Thị Thanh Ly</p>
+                                            <p class="position">QA Group Leader</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="single-item">
+                                        <div class="staff-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://sun-asterisk.vn/wp-content/uploads/2018/11/9.TuBaDuc.jpg" alt="" />
+                                            </div>
+                                            <p class="name">Từ Bá Đức</p>
+                                            <p class="position">BrSE</p>
+                                        </div>
+                                        <div class="staff-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://sun-asterisk.vn/wp-content/uploads/2018/11/10.HoVietTuan.jpg" alt="" />
+                                            </div>
+                                            <p class="name">Hồ Việt Tuấn</p>
+                                            <p class="position">Ruby Engineer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="single-item">
+                                        <div class="staff-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://sun-asterisk.vn/wp-content/uploads/2018/11/11.PhamQuangDinh.jpg" alt="" />
+                                            </div>
+                                            <p class="name">Phạm Quang Định</p>
+                                            <p class="position">Development Group Leader</p>
+                                        </div>
+                                        <div class="staff-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://sun-asterisk.vn/wp-content/uploads/2018/11/12.VuTuyetMai.jpg" alt="" />
+                                            </div>
+                                            <p class="name">Vũ Tuyết Mai</p>
+                                            <p class="position">BA Officer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="single-item">
+                                        <div class="staff-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://sun-asterisk.vn/wp-content/uploads/2018/11/13.NguyenXuanMinhNhat.jpg" alt="" />
+                                            </div>
+                                            <p class="name">Nguyễn Xuân Minh Nhật</p>
+                                            <p class="position">ISO Officer</p>
+                                        </div>
+                                        <div class="staff-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://sun-asterisk.vn/wp-content/uploads/2018/11/14.TranXuanDat.jpg" alt="" />
+                                            </div>
+                                            <p class="name">Trần Xuân Đạt</p>
+                                            <p class="position">.NET Engineer</p>
+                                        </div>
+                                        <div class="staff-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://sun-asterisk.vn/wp-content/uploads/2018/11/16.TranDucPhong.jpg" alt="" />
+                                            </div>
+                                            <p class="name">Trần Đức Phong</p>
+                                            <p class="position">Ruby Engineer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="single-item">
+                                        <div class="staff-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://sun-asterisk.vn/wp-content/uploads/2018/11/17.PhamVanToan.jpg" alt="" />
+                                            </div>
+                                            <p class="name">Phạm Văn Toàn</p>
+                                            <p class="position">R&#038;D Expert</p>
+                                        </div>
+                                        <div class="staff-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://sun-asterisk.vn/wp-content/uploads/2018/11/18.NguyenMyHanh.jpg" alt="" />
+                                            </div>
+                                            <p class="name">Nguyễn Mỹ Hạnh</p>
+                                            <p class="position">HR Officer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="single-item">
+                                        <div class="staff-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://sun-asterisk.vn/wp-content/uploads/2018/11/19.PhungThiHoaiNgoc.jpg" alt="" />
+                                            </div>
+                                            <p class="name">Phùng Thị Hoài Ngọc</p>
+                                            <p class="position">UI/UX Group Leader</p>
+                                        </div>
+                                        <div class="staff-item">
+                                            <div class="image-wrapper">
+                                                <img src="https://sun-asterisk.vn/wp-content/uploads/2018/11/20.NguyenThiHuyenB.jpg" alt="" /></div>
+                                            <p class="name">Nguyễn Thị Huyền B</p>
+                                            <p class="position">Accounting Officer</p>
+                                        </div>
+                                    </div>
+                                </div>    
                             </div>
                         </div>
-                        <div class="staff-item">
-                            <div class="img">
-                                <img src="https://sun-asterisk.vn/wp-content/uploads/2018/11/16.TranDucPhong.jpg" alt="">
-                            </div>
-                            <div class="info">
-                                <p>Name</p>
-                                <p>Position</p>
-                            </div>
-                        </div>
-                        <div class="staff-item">
-                            <div class="img">
-                                <img src="https://sun-asterisk.vn/wp-content/uploads/2018/11/16.TranDucPhong.jpg" alt="">
-                            </div>
-                            <div class="info">
-                                <p>Name</p>
-                                <p>Position</p>
-                            </div>
-                        </div>
-                        <div class="staff-item">
-                            <div class="img">
-                                <img src="https://sun-asterisk.vn/wp-content/uploads/2018/11/16.TranDucPhong.jpg" alt="">
-                            </div>
-                            <div class="info">
-                                <p>Name</p>
-                                <p>Position</p>
-                            </div>
-                        </div>
-                        <div class="staff-item">
-                            <div class="img">
-                                <img src="https://sun-asterisk.vn/wp-content/uploads/2018/11/16.TranDucPhong.jpg" alt="">
-                            </div>
-                            <div class="info">
-                                <p>Name</p>
-                                <p>Position</p>
-                            </div>
-                        </div>
+                        
+                               
                     </div>
                 </div>
             </div>
         </div>    
-    </div>
-    <div id="section7">
+    </section>
+    <section id="section7">
         <div class="container">
             <div class="row">
                 <div class="content">
                     <h3>VĂN HÓA</h3>
-                    <p class="title">HOẠT ĐỘNG VĂN HÓA</p>
+                    <p class="content__title">HOẠT ĐỘNG VĂN HÓA</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="item-news">
-                    <img src="https://sun-asterisk.vn/wp-content/uploads/2016/06/99424908_3044708202231655_3671379267716907008_o.jpg" alt="">
-                    <div class="content-news">
-                        <h3><a href="#">Tưng bừng cùng Men’s day 2020</a></h3>
-                        <p>Ngày thứ 6 cuối cùng của tháng 5 đã đến, với ngày lễ đặc biệt dành riêng cho cánh mày râu công ty. 
-                            Tại các văn phòng Sun*, có thể dễ dàng bắt gặp khung cảnh các chị em rộn ràng chuẩn bị cho sự kiện một năm chỉ có một lần.</p>
-                        <p class="date">
-                            <i class="fas fa-clock"></i>
-                            2020-07-27</p>
+            <div class="carousel">
+                <div class="carousel__wrap-outer">
+                    <div class="carousel__wrap-outer__wrap-items">
+                        <div class="item-news">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/06/99424908_3044708202231655_3671379267716907008_o.jpg" alt="">
+                            <div class="content-news">
+                                <h3><a href="#">Tưng bừng cùng Men’s day 2020</a></h3>
+                                <p>Ngày thứ 6 cuối cùng của tháng 5 đã đến, với ngày lễ đặc biệt dành riêng cho cánh mày râu công ty. 
+                                    Tại các văn phòng Sun*, có thể dễ dàng bắt gặp khung cảnh các chị em rộn ràng chuẩn bị cho sự kiện một năm chỉ có một lần.</p>
+                                <p class="item-news__date">
+                                    <i class="fas fa-clock"></i>
+                                    2020-07-27</p>
+                            </div>
+                        </div>
+                        <div class="item-news">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2016/06/64466107_2305819446120538_5102343559063797760_o.jpg" alt="">
+                            <div class="content-news">
+                                <h3><a href="#">Sun* tại Google I/O Extended Mien Trung 2019 với tư cách nhà tài trợ và diễn giả</a></h3>
+                                <p class="item-news__date">
+                                    <i class="fas fa-clock"></i>
+                                    2020-07-27</p>
+                            </div>
+                        </div>
+                        <div class="item-news">
+                            <div class="image-wrapper">
+                                <img src="https://sun-asterisk.vn/wp-content/uploads/2016/06/99424908_3044708202231655_3671379267716907008_o.jpg" alt="">
+                            </div>
+                            <div class="content-news">
+                                <h3><a href="#">Tưng bừng cùng Men’s day 2020</a></h3>
+                                <p>Ngày thứ 6 cuối cùng của tháng 5 đã đến, với ngày lễ đặc biệt dành riêng cho cánh mày râu công ty. 
+                                    Tại các văn phòng Sun*, có thể dễ dàng bắt gặp khung cảnh các chị em rộn ràng chuẩn bị cho sự kiện một năm chỉ có một lần.</p>
+                                <p class="item-news__date">
+                                    <i class="fas fa-clock"></i>
+                                    2020-07-27</p>
+                            </div>
+                        </div>
+                        <div class="item-news">
+                            <div class="image-wrapper">
+                                <img src="https://sun-asterisk.vn/wp-content/uploads/2016/06/84683802_2762329323802879_8182780565741633536_o.jpg" alt="" />
+                            </div>
+                            <div class="content-news">
+                                <h3>
+                                    <a href="https://news.sun-asterisk.com/vi/p/sunners-3-mien-ho-hoi-chao-xuan-canh-ty-46PjLrE4Vw0" class="item-new-title">Sunners officially returned to work after the 7-day Tet holiday</a>
+                                </h3>
+                                <p class="item-news__date">
+                                    <i class="fas fa-clock"></i>30/01/2020        
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-news">
+                            <div class="image-wrapper">
+                                <img src="https://sun-asterisk.vn/wp-content/uploads/2016/06/81245217_2702039879831824_5411851353523748864_o.jpg" alt="" />
+                            </div>
+                            <div class="item-news__date">
+                                <h3>
+                                    <a href="https://news.sun-asterisk.com/vi/p/ca-nhan-du-an-duoc-vinh-danh-tai-saa-se-tro-thanh-guong-mat-dai-dien-dong-hanh-cung-truyen-thong-sun-nam-2020-ZLjZxDgm5LQ" class="item-new-title">Sun* Annual Awards 2019 &#8211; &#8220;Dawn of Glory&#8221;</a>
+                                </h3>
+                                <p class="item-news__date">
+                                    <i class="fas fa-clock"></i>30/12/2019
+                                </p>
+                            </div>    
+                        </div>
+                            <div class="item-news">
+                            <div class="image-wrapper">
+                                <img src="https://sun-asterisk.vn/wp-content/uploads/2016/06/75604058_2605426606159819_5001735346019368960_o.jpg" alt="" />
+                            </div>
+                            <div class="item-news__date">
+                                <h3>
+                                    <a href="https://news.sun-asterisk.com/vi/p/32-de-cu-cho-5-hang-muc-saa-2019-da-chinh-thuc-duoc-cong-bo-AEm6rdbKeZR" class="item-new-title">Sun* Annual Awards 2019 nomination announcement ceremony</a>
+                                </h3>
+                                <p class="item-news__date">
+                                    <i class="fas fa-clock"></i>21/11/2019
+                                </p>
+                            </div>
+                        </div>
+                            <div class="item-news">
+                            <div class="image-wrapper">
+                                <img src="https://sun-asterisk.vn/wp-content/uploads/2016/06/ec9ccf6e-7ef9-4dd6-9e22-e3a21983c42c.jpg" alt="" />
+                            </div>
+                            <div class="item-news__date">
+                                <h3>
+                                    <a href="https://news.sun-asterisk.com/vi/p/the-high-conference-2019-cong-nghe-dinh-cao-cua-nhung-dien-gia-dinh-dam-qawj9NWBykQ" class="item-new-title">The High Conference 2019 &#8211; The annual academic technical event of &#8216;The High&#8217;</a>
+                                </h3>
+                                <p class="item-news__date">
+                                    <i class="fas fa-clock"></i>
+                                    16/11/2019
+                                </p>
+                            </div>
+                        </div>
+                            <div class="item-news">
+                            <div class="image-wrapper">
+                                <img src="https://sun-asterisk.vn/wp-content/uploads/2016/06/74912307_2576337222402091_4124811609539346432_o.jpg" alt="" />
+                            </div>
+                            <div class="item-news__date">
+                                <h3>UI CROSSROADS: XPERIENCE &#038; BEYOND 2019 &#8211; an event co-organized by Sun* and AngelHack Vietnam</h3>
+                                <p class="item-news__date"><i class="fas fa-clock"></i>
+                                    2/11/2019
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="item-news">
-                    <img src="https://sun-asterisk.vn/wp-content/uploads/2016/06/64466107_2305819446120538_5102343559063797760_o.jpg" alt="">
-                    <div class="content-news">
-                        <h3><a href="#">Sun* tại Google I/O Extended Mien Trung 2019 với tư cách nhà tài trợ và diễn giả</a></h3>
-                        <p class="date">
-                            <i class="fas fa-clock"></i>
-                            2020-07-27</p>
-                    </div>
-                </div>
-                 <div class="item-news hide">
-                    <img src="https://sun-asterisk.vn/wp-content/uploads/2016/06/62207840_2282917165077433_7009477594479329280_o.jpg" alt="">
-                    <div class="content-news">
-                        <h3><a href="#">Men’s Day 2019 – chương trình dành riêng cho các chàng trai tại Sun*</a></h3>
-                        <p class="date">
-                            <i class="fas fa-clock"></i>
-                            2020-07-27</p>
-                    </div>
-                </div>
-            </div>
+            </div>            
         </div>
-    </div>
-    <div id="section8">
+    </section>
+    <section id="section8">
         <h3>GIA NHẬP ĐỘI NGŨ SÁNG TẠO</h3>
         <a href="#">CƠ HỘI NGHỀ NGHIỆP</a>
-    </div>
-    <div id="footer">
+    </section>
+    <footer>
         <div class="container mt-5 pt-3">
             <div class="row">
                 <p>Sun* Inc.</p>
@@ -400,9 +670,9 @@
                 <div>
                     <h4>Find more about our international offices</h4>
                     <ul class="row">
-                        <li>Tokyo Office | </li>
-                        <li> Cebu Office | </li>
-                        <li> Phnom Penh Office | </li>
+                        <li style="border-right:1px solid rgb(241, 238, 238);">Tokyo Office</li>
+                        <li style="border-right:1px solid rgb(241, 238, 238);"> Cebu Office</li>
+                        <li style="border-right:1px solid rgb(241, 238, 238);"> Phnom Penh Office</li>
                         <li><a href="#"><i class="fas fa-map-marker-alt"></i> Check world map</a></li>
                     </ul>
                 </div>
@@ -418,6 +688,6 @@
                 </div>             
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
